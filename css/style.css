@@ -27,6 +27,7 @@ img{max-width:100%;display:block}
 /* hero */
 .hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:96px 22px 64px;position:relative;
 background:radial-gradient(60% 40% at 15% 20%,rgba(63,63,158,.10),transparent 70%),radial-gradient(50% 40% at 88% 30%,rgba(155,0,0,.08),transparent 70%),radial-gradient(60% 40% at 60% 100%,rgba(101,0,102,.09),transparent 70%),#fff}
+.org-logo{width:56px;height:auto;margin:0 auto 14px;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
 .org{font-size:15px;font-weight:600;color:#0b5a78;margin-bottom:34px}
 .logo{display:flex;gap:clamp(6px,1.4vw,14px);perspective:900px}
 .logo i{font-style:normal;background:var(--c);color:var(--yellow);font-weight:800;font-size:clamp(46px,11vw,120px);line-height:1;padding:.22em .2em .3em;border-radius:6px;transform:rotate(var(--r)) rotateY(-8deg);box-shadow:0 24px 50px -18px var(--c);text-shadow:0 2px 0 rgba(0,0,40,.55);animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
@@ -61,10 +62,22 @@ h2{font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1.2;letter-spacing
 .panel{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center;background:#fff;border-radius:28px;padding:clamp(18px,3vw,36px)}
 .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font-weight:500}
 .row:first-child{padding-top:0}.row em{font-style:normal;color:var(--purple);font-weight:600;white-space:nowrap;font-size:14px;background:rgba(101,0,102,.08);padding:3px 12px;border-radius:99px}
+.row span{display:flex;flex-direction:column;gap:3px}
+.row .loc{font-weight:500;color:var(--mute);font-size:13px}
+.row .loc::before{content:"📍 "}
 .note{margin-top:16px;color:var(--mute);font-size:14.5px}
 .panel img{border-radius:18px;width:100%;box-shadow:0 20px 40px -20px rgba(0,0,0,.35)}
 .talent{max-width:1100px;margin:22px auto 0;background:linear-gradient(120deg,var(--indigo),var(--purple) 55%,var(--red));color:#fff;border-radius:28px;padding:clamp(24px,4vw,44px)}
 .talent h3{font-size:clamp(22px,3vw,30px);margin-bottom:8px}.talent .note{color:rgba(255,255,255,.75)}
+
+/* winners */
+.wpanel{grid-template-columns:1fr;gap:18px;max-width:760px}
+.wcomp{padding:20px 0;border-bottom:1px solid var(--line)}
+.wcomp:last-child{border-bottom:0}
+.wcomp h4{font-size:17px;margin-bottom:10px}
+.wlist{list-style:none;display:flex;flex-direction:column;gap:8px}
+.wlist li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15.5px}
+.medal{font-size:20px;width:1.4em;text-align:center}
 
 /* gallery rail */
 .rail-wrap{position:relative;max-width:1400px;margin:auto}
