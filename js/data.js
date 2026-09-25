@@ -46,7 +46,7 @@ const UI = {
     rules_t:"Rules and regulations", team:"Organisers", team_s:"Governing Council and Executive Committee Members",
     winners_t:"Winners", winners_s:"Choose a category.", winners_empty:"Results will be posted here soon.",
     contact_t:"Contact", contact_s:"Questions? Give us a call.", reels_send:"To send your reel link",
-    welcome:"Everyone is warmly welcome", address:"#101/B, 11th Cross, 8th Main, Malleshwaram, Bengaluru – 560 003",
+    welcome:"Everyone is warmly welcome", address:"#101/A, 11th Cross, 8th Main, Malleshwaram, Bengaluru – 560 003",
     open:"Menu", scroll_l:"Previous", scroll_r:"Next"
   }
 };
