@@ -5,7 +5,7 @@
    Nothing else needs to change when you flip these. */
 const SETTINGS = {
   showGallery: true,
-  showWinners: false
+  showWinners: true
 };
 
 const UI = {
