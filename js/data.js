@@ -1,10 +1,19 @@
 /* All bilingual content lives here. Edit text freely. kn = Kannada, en = English */
+
+/* ---- SWITCHES ----
+   Turn sections on/off here. true = visible on the site, false = hidden (nav link + section both disappear).
+   Nothing else needs to change when you flip these. */
+const SETTINGS = {
+  showGallery: true,
+  showWinners: false
+};
+
 const UI = {
   kn: {
-    nav_about:"ಕಾರ್ಯಕ್ರಮ", nav_comp:"ಸ್ಪರ್ಧೆಗಳು", nav_gallery:"ಗ್ಯಾಲರಿ", nav_reels:"ರೀಲ್ಸ್", nav_rules:"ನಿಯಮಗಳು", nav_contact:"ಸಂಪರ್ಕ",
+    nav_about:"ಕಾರ್ಯಕ್ರಮ", nav_comp:"ಸ್ಪರ್ಧೆಗಳು", nav_gallery:"ಗ್ಯಾಲರಿ", nav_reels:"ರೀಲ್ಸ್", nav_rules:"ನಿಯಮಗಳು", nav_winners:"ವಿಜೇತರು", nav_contact:"ಸಂಪರ್ಕ",
     org:"ಶ್ರೀ ಅಖಿಲ ಹವ್ಯಕ ಮಹಾಸಭಾ (ರಿ)", region:"ಬೆಂಗಳೂರು ಪ್ರಾಂತ್ಯ",
     tagline:"ಹವ್ಯಕ ಪ್ರತಿಭೆಗಳಿಗಾಗಿ ನಡೆಯುವ ಸ್ಪರ್ಧಾ ಸೌರಭ",
-    hero_sub:"ಹವ್ಯಕ ಪ್ರತಿಭೆಗಳಿಗೆ ವೇದಿಕೆ. ಎಲ್ಲಾ ವಯೋಮಿತಿಯವರಿಗೂ ಸ್ಪರ್ಧೆಗಳಿವೆ.",
+    hero_sub:"ಹವ್ಯಕ ಪ್ರತಿಭೆಗಳಿಗೊಂದು ಸದವಕಾಶ, ಎಲ್ಲ ವಯೋಮಾನದವರಿಗೂ ಸಮಾನ ವೇದಿಕೆ.",
     btn_comp:"ಸ್ಪರ್ಧೆಗಳನ್ನು ನೋಡಿ", btn_call:"ಕರೆ ಮಾಡಿ",
     when:"ದಿನಾಂಕ", when_v:"04 ಅಕ್ಟೋಬರ್ 2026", when_s:"ಭಾನುವಾರ",
     time:"ಸಮಯ", time_v:"ಬೆಳಿಗ್ಗೆ 9.30 ರಿಂದ ಸಂಜೆ 7 ರವರೆಗೆ",
@@ -15,13 +24,14 @@ const UI = {
     reels_t:"ಕಂಟೆಂಟ್ ಕ್ರಿಯೇಟರ್‌ಗಳಿಗೊಂದು ಸುವರ್ಣಾವಕಾಶ", reels_s:"ಭಾಗವಹಿಸಿ, ನಿಮ್ಮ ಸೃಜನಶೀಲತೆ ತೋರಿಸಿ, ಆಕರ್ಷಕ ಬಹುಮಾನ ಗೆಲ್ಲಿ.",
     reels_only:"ಹವ್ಯಕ ಕಂಟೆಂಟ್ ಕ್ರಿಯೇಟರ್‌ಗಳಿಗೆ ಮಾತ್ರ.", reels_h:"ರೀಲ್ಸ್ ನಿಬಂಧನೆಗಳು", reels_note:"ವಿ. ಸೂ.: ಕೇವಲ ವೀಕ್ಷಣೆಯ ಸಂಖ್ಯೆ ಮಾತ್ರ ನಿರ್ಣಯಕ್ಕೆ ಮಾನದಂಡವಲ್ಲ.",
     rules_t:"ನಿಯಮ-ನಿಬಂಧನೆಗಳು", team:"ಸಂಘಟಕರು", team_s:"ಆಡಳಿತ ಮಂಡಳಿ ಮತ್ತು ಕಾರ್ಯಕಾರಿ ಸಮಿತಿ ಸದಸ್ಯರು",
+    winners_t:"ವಿಜೇತರು", winners_s:"ವಿಭಾಗವನ್ನು ಆಯ್ಕೆಮಾಡಿ.", winners_empty:"ಫಲಿತಾಂಶ ಶೀಘ್ರದಲ್ಲೇ ಪ್ರಕಟವಾಗುವುದು.",
     contact_t:"ಸಂಪರ್ಕ", contact_s:"ಪ್ರಶ್ನೆಗಳಿವೆಯೇ? ಕರೆ ಮಾಡಿ.", reels_send:"ರೀಲ್ ಲಿಂಕ್ ಕಳುಹಿಸಲು",
-    welcome:"ಸರ್ವರಿಗೂ ಆದರದ ಸ್ವಾಗತ", address:"# 101/ಬ, 11ನೆಯ ಅಡ್ಡರಸ್ತೆ, 8ನೆಯ ಮುಖ್ಯರಸ್ತೆ, ಮಲ್ಲೇಶ್ವರಂ, ಬೆಂಗಳೂರು – 560 003",
+    welcome:"ಸರ್ವರಿಗೂ ಆದರದ ಸ್ವಾಗತ", address:"# 101/ಎ, 11ನೆಯ ಅಡ್ಡರಸ್ತೆ, 8ನೆಯ ಮುಖ್ಯರಸ್ತೆ, ಮಲ್ಲೇಶ್ವರಂ, ಬೆಂಗಳೂರು – 560 003",
     open:"ಮೆನು", scroll_l:"ಹಿಂದೆ", scroll_r:"ಮುಂದೆ"
   },
   en: {
-    nav_about:"Event", nav_comp:"Competitions", nav_gallery:"Gallery", nav_reels:"Reels", nav_rules:"Rules", nav_contact:"Contact",
-    org:"Sri Akhila Havyaka Mahasabha (R)", region:"Bengaluru Region",
+    nav_about:"Event", nav_comp:"Competitions", nav_gallery:"Gallery", nav_reels:"Reels", nav_rules:"Rules", nav_winners:"Winners", nav_contact:"Contact",
+    org:"Shri Akhila Havyaka Mahasabha (R)", region:"Bengaluru Region",
     tagline:"A festival of competitions for Havyaka talent",
     hero_sub:"A stage for Havyaka talent, with competitions for every age group.",
     btn_comp:"Explore competitions", btn_call:"Call us",
@@ -34,17 +44,21 @@ const UI = {
     reels_t:"A golden opportunity for content creators", reels_s:"Take part, show your creativity and win attractive prizes.",
     reels_only:"Only for Havyaka content creators.", reels_h:"Reel guidelines", reels_note:"Note: view count alone is not a criterion for judging.",
     rules_t:"Rules and regulations", team:"Organisers", team_s:"Governing Council and Executive Committee Members",
+    winners_t:"Winners", winners_s:"Choose a category.", winners_empty:"Results will be posted here soon.",
     contact_t:"Contact", contact_s:"Questions? Give us a call.", reels_send:"To send your reel link",
     welcome:"Everyone is warmly welcome", address:"#101/B, 11th Cross, 8th Main, Malleshwaram, Bengaluru – 560 003",
     open:"Menu", scroll_l:"Previous", scroll_r:"Next"
   }
 };
 
+/* Each competition item can optionally take a "loc" field to show a room/hall note under it, e.g.:
+   {kn:"ಛದ್ಮವೇಷ",en:"Fancy dress",t:{kn:"2 ನಿಮಿಷ",en:"2 min"},loc:{kn:"2ನೇ ಮಹಡಿ, ಮಿನಿ ಹಾಲ್",en:"2nd floor, Mini Hall"}}
+   Leave "loc" out entirely (as below) and nothing extra shows up. */
 const GROUPS = [
  { id:"u6", tab:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}, img:"under-6.webp",
    items:[
     {kn:"ಶ್ಲೋಕ ಪಠಣ",en:"Shloka recitation",t:{kn:"3 ನಿಮಿಷ",en:"3 min"}},
-    {kn:"ಛದ್ಮವೇಷ",en:"Fancy dress",t:{kn:"2 ನಿಮಿಷ",en:"2 min"}},
+    {kn:"ಛದ್ಮವೇಷ",en:"Fancy dress",t:{kn:"2 ನಿಮಿಷ",en:"2 min"},loc:{kn:"2ನೇ ಮಹಡಿ, ಮಿನಿ ಹಾಲ್",en:"2nd floor, Mini Hall"}},
     {kn:"ಬಣ್ಣ ತುಂಬುವುದು",en:"Colour filling",t:{kn:"1 ತಾಸು",en:"1 hour"}}],
    note:{kn:"ಛದ್ಮವೇಷ ಸ್ಪರ್ಧೆಯಲ್ಲಿ ಮಾತಿಗೆ ಅವಕಾಶವಿರುವುದಿಲ್ಲ. ವೇಷಭೂಷಣಕ್ಕೆ ಆದ್ಯತೆ. ಅಭಿನಯಕ್ಕೆ ಅವಕಾಶವಿದೆ.",en:"No speaking in the fancy dress round. Costume is given priority; acting is allowed."}},
  { id:"a7", tab:{kn:"7 ರಿಂದ 12 ವರ್ಷ",en:"7 to 12 years"}, img:"age-7-12.webp",
@@ -125,4 +139,34 @@ const GALLERY = [
  {src:"age-12-18.webp",alt:{kn:"12 ರಿಂದ 18 ವರ್ಷ",en:"12 to 18 years"}},
  {src:"general.webp",alt:{kn:"ಸಾಮಾನ್ಯ ವಿಭಾಗ",en:"General category"}},
  {src:"title-art.webp",alt:{kn:"ಪ್ರತಿಬಿಂಬ",en:"Pratibimba"}}
+];
+
+/* Winners: fill this in after the event and set SETTINGS.showWinners = true at the top of this file.
+   One entry per age group (same order as GROUPS). Each competition can have 1st/2nd/3rd.
+   To add a winner, add a line inside "ranks": {p:1,name:{kn:"ಹೆಸರು",en:"Name"}}
+   Leave "ranks" as an empty array [] for a competition with no result yet — it will just say "coming soon". */
+const WINNERS = [
+ { tab:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}, comps:[
+    { name:{kn:"ಶ್ಲೋಕ ಪಠಣ",en:"Shloka recitation"}, ranks:[] },
+    { name:{kn:"ಛದ್ಮವೇಷ",en:"Fancy dress"}, ranks:[] },
+    { name:{kn:"ಬಣ್ಣ ತುಂಬುವುದು",en:"Colour filling"}, ranks:[] }
+ ]},
+ { tab:{kn:"7 ರಿಂದ 12 ವರ್ಷ",en:"7 to 12 years"}, comps:[
+    { name:{kn:"ಭಗವದ್ಗೀತಾ ಕಂಠಪಾಠ",en:"Bhagavad Gita recitation"}, ranks:[] },
+    { name:{kn:"ಚಿತ್ರಕಲೆ",en:"Drawing"}, ranks:[] },
+    { name:{kn:"ಏಕಪಾತ್ರಾಭಿನಯ",en:"Solo acting"}, ranks:[] }
+ ]},
+ { tab:{kn:"12 ರಿಂದ 18 ವರ್ಷ",en:"12 to 18 years"}, comps:[
+    { name:{kn:"ರಸಪ್ರಶ್ನೆ",en:"Quiz"}, ranks:[] },
+    { name:{kn:"ಆಶುಭಾಷಣ",en:"Extempore speech"}, ranks:[] },
+    { name:{kn:"ದೇಶಭಕ್ತಿಗೀತೆ",en:"Patriotic song"}, ranks:[] },
+    { name:{kn:"ಚರ್ಚಾಸ್ಪರ್ಧೆ",en:"Debate"}, ranks:[] }
+ ]},
+ { tab:{kn:"ಸಾಮಾನ್ಯ ವಿಭಾಗ (18+)",en:"General (18+)"}, comps:[
+    { name:{kn:"ಹವ್ಯಕ ಸಂಪ್ರದಾಯ ಗೀತೆ",en:"Havyaka traditional song"}, ranks:[] },
+    { name:{kn:"ರಂಗೋಲಿ",en:"Rangoli"}, ranks:[] },
+    { name:{kn:"ಜಾನಪದ ಗೀತೆ",en:"Folk song"}, ranks:[] },
+    { name:{kn:"ಹವಿಗನ್ನಡ ಆಶುಭಾಷಣ",en:"Extempore speech in Havigannada"}, ranks:[] },
+    { name:{kn:"ಕರಕುಶಲ ವಸ್ತು ಪ್ರದರ್ಶನ",en:"Handicraft exhibition"}, ranks:[] }
+ ]}
 ];
