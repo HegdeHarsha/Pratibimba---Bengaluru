@@ -138,7 +138,7 @@ const GALLERY = [
  {src:"seven to tweleve.png",alt:{kn:"7 ರಿಂದ 12 ವರ್ಷ",en:"7 to 12 years"}},
  {src:"12 to 16.png",alt:{kn:"12 ರಿಂದ 18 ವರ್ಷ",en:"12 to 18 years"}},
  {src:"common.png",alt:{kn:"ಸಾಮಾನ್ಯ ವಿಭಾಗ",en:"General category"}},
- {src:"title-art.webp",alt:{kn:"ಪ್ರತಿಬಿಂಬ",en:"Pratibimba"}}
+ {src:"Content.png",alt:{kn:"ಪ್ರತಿಬಿಂಬ",en:"Pratibimba"}}
 ];
 
 /* Winners: fill this in after the event and set SETTINGS.showWinners = true at the top of this file.
