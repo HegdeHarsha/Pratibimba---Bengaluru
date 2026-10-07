@@ -133,7 +133,7 @@ const PEOPLE = [
 /* Add more pictures here: put the file in assets/gallery/ and add a line. */
 const GALLERY = [
  {src:"title-details.webp",alt:{kn:"ಪ್ರತಿಬಿಂಬ ಬೆಂಗಳೂರು ಪ್ರಾಂತ್ಯ",en:"Pratibimba Bengaluru Region"}},
- {src:"poster.webp",alt:{kn:"ವಿಧಾನ ಸೌಧ ಪೋಸ್ಟರ್",en:"Event poster"}},
+ {src:"poster.png",alt:{kn:"ವಿಧಾನ ಸೌಧ ಪೋಸ್ಟರ್",en:"Event poster"}},
  {src:"under-6.webp",alt:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}},
  {src:"age-7-12.webp",alt:{kn:"7 ರಿಂದ 12 ವರ್ಷ",en:"7 to 12 years"}},
  {src:"age-12-18.webp",alt:{kn:"12 ರಿಂದ 18 ವರ್ಷ",en:"12 to 18 years"}},
