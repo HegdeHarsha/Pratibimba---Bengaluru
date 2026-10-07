@@ -55,7 +55,7 @@ const UI = {
    {kn:"ಛದ್ಮವೇಷ",en:"Fancy dress",t:{kn:"2 ನಿಮಿಷ",en:"2 min"},loc:{kn:"2ನೇ ಮಹಡಿ, ಮಿನಿ ಹಾಲ್",en:"2nd floor, Mini Hall"}}
    Leave "loc" out entirely (as below) and nothing extra shows up. */
 const GROUPS = [
- { id:"u6", tab:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}, img:"under-6.webp",
+ { id:"u6", tab:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}, img:"below six.png",
    items:[
     {kn:"ಶ್ಲೋಕ ಪಠಣ",en:"Shloka recitation",t:{kn:"3 ನಿಮಿಷ",en:"3 min"}},
     {kn:"ಛದ್ಮವೇಷ",en:"Fancy dress",t:{kn:"2 ನಿಮಿಷ",en:"2 min"},loc:{kn:"2ನೇ ಮಹಡಿ, ಮಿನಿ ಹಾಲ್",en:"2nd floor, Mini Hall"}},
