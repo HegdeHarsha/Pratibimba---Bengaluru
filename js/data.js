@@ -57,31 +57,31 @@ const UI = {
 const GROUPS = [
  { id:"u6", tab:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}, img:"below 6.png",
    items:[
-    {kn:"ಶ್ಲೋಕ ಪಠಣ",en:"Shloka recitation",t:{kn:"3 ನಿಮಿಷ",en:"3 min"}},
-    {kn:"ಛದ್ಮವೇಷ",en:"Fancy dress",t:{kn:"2 ನಿಮಿಷ",en:"2 min"},loc:{kn:"2ನೇ ಮಹಡಿ, ಮಿನಿ ಹಾಲ್",en:"2nd floor, Mini Hall"}},
-    {kn:"ಬಣ್ಣ ತುಂಬುವುದು",en:"Colour filling",t:{kn:"1 ತಾಸು",en:"1 hour"}}],
+    {kn:"ಶ್ಲೋಕ ಪಠಣ",en:"Shloka recitation",t:{kn:"3 ನಿಮಿಷ",en:"3 min"},loc:{kn:"ಮಿನಿ ಹಾಲ್ - ಎರಡನೇ ಮಹಡಿ",en:"Mini Hall - Second Floor"}},
+    {kn:"ಛದ್ಮವೇಷ",en:"Fancy dress",t:{kn:"2 ನಿಮಿಷ",en:"2 min"},loc:{kn:"ಮುಖ್ಯ ವೇದಿಕೆ",en:"Main Hall"}},
+    {kn:"ಬಣ್ಣ ತುಂಬುವುದು",en:"Colour filling",t:{kn:"1 ತಾಸು",en:"1 hour"},loc:{kn:"ಬೆಸ್ಮೆಂಟ್/ನೆಲಮಹಡಿ",en:"Basement"}}],
    note:{kn:"ಛದ್ಮವೇಷ ಸ್ಪರ್ಧೆಯಲ್ಲಿ ಮಾತಿಗೆ ಅವಕಾಶವಿರುವುದಿಲ್ಲ. ವೇಷಭೂಷಣಕ್ಕೆ ಆದ್ಯತೆ. ಅಭಿನಯಕ್ಕೆ ಅವಕಾಶವಿದೆ.",en:"No speaking in the fancy dress round. Costume is given priority; acting is allowed."}},
  { id:"a7", tab:{kn:"7 ರಿಂದ 12 ವರ್ಷ",en:"7 to 12 years"}, img:"7-12.png",
    items:[
-    {kn:"ಭಗವದ್ಗೀತಾ ಕಂಠಪಾಠ (2ನೇ ಅಧ್ಯಾಯ)",en:"Bhagavad Gita recitation (Chapter 2)",t:{kn:"3 ನಿಮಿಷ",en:"3 min"}},
-    {kn:"ಚಿತ್ರಕಲೆ (ಹವ್ಯಕರ ಗ್ರಾಮೀಣ ಬದುಕು)",en:"Drawing (theme: Havyaka rural life)",t:{kn:"1 ತಾಸು",en:"1 hour"}},
-    {kn:"ಏಕಪಾತ್ರಾಭಿನಯ",en:"Solo acting",t:{kn:"4 ನಿಮಿಷ",en:"4 min"}}],
+    {kn:"ಭಗವದ್ಗೀತಾ ಕಂಠಪಾಠ (2ನೇ ಅಧ್ಯಾಯ)",en:"Bhagavad Gita recitation (Chapter 2)",t:{kn:"3 ನಿಮಿಷ",en:"3 min"},loc:{kn:"ಮಿನಿ ಹಾಲ್ - ಎರಡನೇ ಮಹಡಿ",en:"Mini Hall - Second Floor"}},
+    {kn:"ಚಿತ್ರಕಲೆ (ಹವ್ಯಕರ ಗ್ರಾಮೀಣ ಬದುಕು)",en:"Drawing (theme: Havyaka rural life)",t:{kn:"1 ತಾಸು",en:"1 hour"},loc:{kn:"ಬೆಸ್ಮೆಂಟ್/ನೆಲಮಹಡಿ",en:"Basement"}},
+    {kn:"ಏಕಪಾತ್ರಾಭಿನಯ",en:"Solo acting",t:{kn:"4 ನಿಮಿಷ",en:"4 min"},loc:{kn:"ಮುಖ್ಯ ವೇದಿಕೆ",en:"Main Hall"}}],
    note:{kn:"ಚಿತ್ರಕಲೆಗೆ ಡ್ರಾಯಿಂಗ್ ಶೀಟ್ ನೀಡಲಾಗುವುದು. ಬಣ್ಣ ಇನ್ನಿತರ ಸಾಮಗ್ರಿಗಳನ್ನು ಸ್ಪರ್ಧಾರ್ಥಿಗಳೇ ತರಬೇಕು.",en:"A drawing sheet will be provided. Participants must bring their own colours and other materials."}},
  { id:"a12", tab:{kn:"12 ರಿಂದ 18 ವರ್ಷ",en:"12 to 18 years"}, img:"12-18.png",
    items:[
-    {kn:"ರಸಪ್ರಶ್ನೆ: ರಾಮಾಯಣ, ಮಹಾಭಾರತ ಮತ್ತು ಸಾಮಾನ್ಯ ಜ್ಞಾನ",en:"Quiz: Ramayana, Mahabharata and general knowledge",t:{kn:"ಎರಡು ಜನರ ತಂಡ",en:"Team of 2"}},
-    {kn:"ಆಶುಭಾಷಣ",en:"Extempore speech",t:{kn:"3 ನಿಮಿಷ",en:"3 min"}},
-    {kn:"ದೇಶಭಕ್ತಿಗೀತೆ",en:"Patriotic song",t:{kn:"4 ನಿಮಿಷ",en:"4 min"}},
-    {kn:"ಚರ್ಚಾಸ್ಪರ್ಧೆ: ಗ್ರಾಮೀಣ ಪ್ರದೇಶದಲ್ಲಿ ಹವ್ಯಕರ ಸ್ವ ಉದ್ಯಮ ಸಾಧ್ಯವೇ?",en:"Debate: Is self-entrepreneurship possible for Havyakas in rural areas?",t:{kn:"4 ನಿಮಿಷ",en:"4 min"}}],
+    {kn:"ರಸಪ್ರಶ್ನೆ: ರಾಮಾಯಣ, ಮಹಾಭಾರತ ಮತ್ತು ಸಾಮಾನ್ಯ ಜ್ಞಾನ",en:"Quiz: Ramayana, Mahabharata and general knowledge",t:{kn:"ಎರಡು ಜನರ ತಂಡ",en:"Team of 2"},loc:{kn:"ಮಿನಿ ಹಾಲ್ - ಎರಡನೇ ಮಹಡಿ",en:"Mini Hall - Second Floor"}},
+    {kn:"ಆಶುಭಾಷಣ",en:"Extempore speech",t:{kn:"3 ನಿಮಿಷ",en:"3 min"},loc:{kn:"ಹಾಸ್ಟೆಲ್ ಭೋಜನಾಲಯ",en:"Hostel Dining Hall"}},
+    {kn:"ದೇಶಭಕ್ತಿಗೀತೆ",en:"Patriotic song",t:{kn:"4 ನಿಮಿಷ",en:"4 min"},loc:{kn:"ಮುಖ್ಯ ವೇದಿಕೆ",en:"Main Hall"}},
+    {kn:"ಚರ್ಚಾಸ್ಪರ್ಧೆ: ಗ್ರಾಮೀಣ ಪ್ರದೇಶದಲ್ಲಿ ಹವ್ಯಕರ ಸ್ವ ಉದ್ಯಮ ಸಾಧ್ಯವೇ?",en:"Debate: Is self-entrepreneurship possible for Havyakas in rural areas?",t:{kn:"4 ನಿಮಿಷ",en:"4 min"},loc:{kn:"ಹಾಸ್ಟೆಲ್ ಭೋಜನಾಲಯ",en:"Hostel Dining Hall"}}],
    note:null},
  { id:"gen", tab:{kn:"ಸಾಮಾನ್ಯ ವಿಭಾಗ (18+)",en:"General (18+)"}, img:"18.png",
    items:[
-    {kn:"ಹವ್ಯಕ ಸಂಪ್ರದಾಯ ಗೀತೆ (ಕನಿಷ್ಠ 3, ಗರಿಷ್ಠ 5 ಜನರ ತಂಡ)",en:"Havyaka traditional song (team of 3 to 5)",t:{kn:"5 ನಿಮಿಷ",en:"5 min"}},
-    {kn:"ರಂಗೋಲಿ (ಚುಕ್ಕಿ)",en:"Rangoli (dotted)",t:{kn:"1.5 ತಾಸು",en:"1.5 hours"}},
-    {kn:"ಜಾನಪದ ಗೀತೆ (ಸೋಲೋ)",en:"Folk song (solo)",t:{kn:"4 ನಿಮಿಷ",en:"4 min"}},
-    {kn:"ಹವಿಗನ್ನಡ ಆಶುಭಾಷಣ",en:"Extempore speech in Havigannada",t:{kn:"3 ನಿಮಿಷ",en:"3 min"}},
-    {kn:"ಹವಿರುಚಿ: ಹಲ್ವಾ / ಮಣ್ಣಿ",en:"Havyaka cuisine: Halwa / Manni",t:{kn:"ಮನೆಯಿಂದ ತನ್ನಿ",en:"Bring from home"}},
-    {kn:"ಕರಕುಶಲ ವಸ್ತು ಪ್ರದರ್ಶನ (ಒಬ್ಬರು ಹಲವು ವಸ್ತುಗಳನ್ನು ಪ್ರದರ್ಶಿಸಬಹುದು)",en:"Handicraft exhibition (one may display several items)",t:{kn:"ಪ್ರದರ್ಶನ",en:"Exhibit"}}],
+    {kn:"ಹವ್ಯಕ ಸಂಪ್ರದಾಯ ಗೀತೆ (ಕನಿಷ್ಠ 3, ಗರಿಷ್ಠ 5 ಜನರ ತಂಡ)",en:"Havyaka traditional song (team of 3 to 5)",t:{kn:"5 ನಿಮಿಷ",en:"5 min"},loc:{kn:"ಮುಖ್ಯ ವೇದಿಕೆ",en:"Main Hall "}},
+    {kn:"ರಂಗೋಲಿ (ಚುಕ್ಕಿ)",en:"Rangoli (dotted)",t:{kn:"1.5 ತಾಸು",en:"1.5 hours"},loc:{kn:"ಬೋರ್ಡ್ ಹಾಲ್  - ಎರಡನೇ ಮಹಡಿ",en:"Board Hall - Second Floor"}},
+    {kn:"ಜಾನಪದ ಗೀತೆ (ಸೋಲೋ)",en:"Folk song (solo)",t:{kn:"4 ನಿಮಿಷ",en:"4 min"},loc:{kn:"ಮುಖ್ಯ ವೇದಿಕೆ",en:"Main Hall "}},
+    {kn:"ಹವಿಗನ್ನಡ ಆಶುಭಾಷಣ",en:"Extempore speech in Havigannada",t:{kn:"3 ನಿಮಿಷ",en:"3 min"},loc:{kn:"ಮುಖ್ಯ ವೇದಿಕೆ",en:"Main Hall "}},
+    {kn:"ಹವಿರುಚಿ: ಹಲ್ವಾ / ಮಣ್ಣಿ",en:"Havyaka cuisine: Halwa / Manni",t:{kn:"ಮನೆಯಿಂದ ತನ್ನಿ",en:"Bring from home"},loc:{kn:"ಮೊದಲನೇ ಮಹಡಿ ",en:"First Floor"}},
+    {kn:"ಕರಕುಶಲ ವಸ್ತು ಪ್ರದರ್ಶನ (ಒಬ್ಬರು ಹಲವು ವಸ್ತುಗಳನ್ನು ಪ್ರದರ್ಶಿಸಬಹುದು)",en:"Handicraft exhibition (one may display several items)",t:{kn:"ಪ್ರದರ್ಶನ",en:"Exhibit"},loc:{kn:"ಮೊದಲನೇ ಮಹಡಿ ",en:"First Floor"}}],
    note:{kn:"ಸಾಮಾನ್ಯ ವಿಭಾಗದಲ್ಲಿ ಒಬ್ಬರು ಮೂರು ಸ್ಪರ್ಧೆಗಳಲ್ಲಿ ಮಾತ್ರ ಭಾಗವಹಿಸಬಹುದು.",en:"In the General category, one person may take part in only three competitions."}}
 ];
 
