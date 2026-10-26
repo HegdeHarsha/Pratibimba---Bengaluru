@@ -147,26 +147,91 @@ const GALLERY = [
    Leave "ranks" as an empty array [] for a competition with no result yet — it will just say "coming soon". */
 const WINNERS = [
  { tab:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}, comps:[
-    { name:{kn:"ಶ್ಲೋಕ ಪಠಣ",en:"Shloka recitation"}, ranks:[] },
-    { name:{kn:"ಛದ್ಮವೇಷ",en:"Fancy dress"}, ranks:[] },
-    { name:{kn:"ಬಣ್ಣ ತುಂಬುವುದು",en:"Colour filling"}, ranks:[] }
+    { name:{kn:"ಶ್ಲೋಕ ಪಠಣ",en:"Shloka recitation"}, ranks:[
+      {p:1,name:{kn:"ನಿಷ್ಕಲ ಎನ್. ಶರ್ಮಾ",en:"Nishkala N. Sharma"}},
+      {p:2,name:{kn:"ಶ್ರೀಹಾನ್ ಹೆಗಡೆ",en:"Srihan Hegde"}},
+      {p:3,name:{kn:"ಸಮರ್ಥ್ ಹೆಗಡೆ",en:"Samarth Hegde"}}
+    ] },
+    { name:{kn:"ಛದ್ಮವೇಷ",en:"Fancy dress"}, ranks:[
+      {p:1,name:{kn:"ಚಿತ್ಕಲಾ ವಿ ರಾವ್",en:"Chitkala V. Rao"}},
+      {p:2,name:{kn:"ಅಭಿಶ್ರೀ ಹೆಬ್ಬಾರ್",en:"Abhishree Hebbar"}},
+      {p:3,name:{kn:"ಶ್ರೀಹಾನ್ ಹೆಗಡೆ",en:"Srihan Hegde"}}
+    ] },
+    { name:{kn:"ಬಣ್ಣ ತುಂಬುವುದು",en:"Colour filling"}, ranks:[
+      {p:1,name:{kn:"ಪ್ರಣಮ್ಯ ಹೆಗಡೆ",en:"Pranamya Hegde"}},
+      {p:2,name:{kn:"ಅದ್ವೈತ್ ಸಭಾಹಿತ್",en:"Advait Sabhahit"}},
+      {p:3,name:{kn:"ಶರಣ್ಯ ಹೆಗಡೆ",en:"Sharanya Hegde"}}
+    ] }
  ]},
  { tab:{kn:"7 ರಿಂದ 12 ವರ್ಷ",en:"7 to 12 years"}, comps:[
-    { name:{kn:"ಭಗವದ್ಗೀತಾ ಕಂಠಪಾಠ",en:"Bhagavad Gita recitation"}, ranks:[] },
-    { name:{kn:"ಚಿತ್ರಕಲೆ",en:"Drawing"}, ranks:[] },
-    { name:{kn:"ಏಕಪಾತ್ರಾಭಿನಯ",en:"Solo acting"}, ranks:[] }
+    { name:{kn:"ಭಗವದ್ಗೀತಾ ಕಂಠಪಾಠ",en:"Bhagavad Gita recitation"}, ranks:[
+      {p:1,name:{kn:"ವೈಭವೀ ಭಟ್",en:"Vaibhavi Bhat"}},
+      {p:2,name:{kn:"ವೈಷ್ಣವೀ ಭಟ್",en:"Vaishnavi Bhat"}},
+      {p:3,name:{kn:"ಸುಘೋಷ್ ಬಿ. ಆರ್.",en:"Sughosh B. R."}}
+    ] },
+    { name:{kn:"ಚಿತ್ರಕಲೆ",en:"Drawing"}, ranks:[
+      {p:1,name:{kn:"ಅದ್ವೈಯ್ ಎಸ್.",en:"Advaiy S."}},
+      {p:2,name:{kn:"ವರ್ಣಿಕಾ ಆರ್.",en:"Varnika R."}},
+      {p:3,name:{kn:"ನವಚೇತ್ ಸದಾಶಿವ",en:"Navachet Sadashiva"}}
+    ] },
+    { name:{kn:"ಏಕಪಾತ್ರಾಭಿನಯ",en:"Solo acting"}, ranks:[
+      {p:1,name:{kn:"ಅನುಷಾ ಸಾವಿತ್ರಿ",en:"Anusha Savitri"}},
+      {p:2,name:{kn:"ವೈಷ್ಣವೀ ಭಟ್",en:"Vaishnavi Bhat"}},
+      {p:3,name:{kn:"ಅಭಿಜ್ಞಾ ಹೆಗಡೆ",en:"Abhijna Hegde"}}
+    ] }
  ]},
  { tab:{kn:"12 ರಿಂದ 18 ವರ್ಷ",en:"12 to 18 years"}, comps:[
-    { name:{kn:"ರಸಪ್ರಶ್ನೆ",en:"Quiz"}, ranks:[] },
-    { name:{kn:"ಆಶುಭಾಷಣ",en:"Extempore speech"}, ranks:[] },
-    { name:{kn:"ದೇಶಭಕ್ತಿಗೀತೆ",en:"Patriotic song"}, ranks:[] },
-    { name:{kn:"ಚರ್ಚಾಸ್ಪರ್ಧೆ",en:"Debate"}, ranks:[] }
+    { name:{kn:"ರಸಪ್ರಶ್ನೆ",en:"Quiz"}, ranks:[
+      {p:1,name:{kn:"ಲಾಸ್ಯ ಭಟ್ & ಅನ್ವಿ ಭಟ್",en:"Lasya Bhat & Anvi Bhat"}},
+      {p:2,name:{kn:"ಅನನ್ಯ ಎಂ. ಆರ್. & ದ್ಯುತಿ ಭಟ್",en:"Ananya M. R. & Dyuti Bhat"}},
+      {p:3,name:{kn:"ನಿಯತಿ ಯು. ಭಟ್ & ಅನ್ವಿತಾ ಸಾವಿತ್ರಿ",en:"Niyati U. Bhat & Anvita Savitri"}}
+    ] },
+    { name:{kn:"ಆಶುಭಾಷಣ",en:"Extempore speech"}, ranks:[
+      {p:1,name:{kn:"ಪೂರ್ವಜ್ ಹೆಗಡೆ",en:"Poorvaj Hegde"}},
+      {p:2,name:{kn:"ಕಾರ್ತಿಕ್",en:"Karthik"}},
+      {p:3,name:{kn:"ಧನ್ಯ",en:"Dhanya"}}
+    ] },
+    { name:{kn:"ದೇಶಭಕ್ತಿಗೀತೆ",en:"Patriotic song"}, ranks:[
+      {p:1,name:{kn:"ಅಭಿನವ್ ಭಟ್",en:"Abhinav Bhat"}},
+      {p:2,name:{kn:"ಅನ್ವಿತಾ ಸಾವಿತ್ರಿ",en:"Anvita Savitri"}},
+      {p:3,name:{kn:"ಸಾತ್ವಿಕ್ ದೀಕ್ಷಿತ್",en:"Satvik Dikshit"}}
+    ] },
+    { name:{kn:"ಚರ್ಚಾಸ್ಪರ್ಧೆ",en:"Debate"}, ranks:[
+      {p:1,name:{kn:"ಲಾಸ್ಯ ಭಟ್",en:"Lasya Bhat"}},
+      {p:2,name:{kn:"ಪೂರ್ವಜ್ ಹೆಗಡೆ",en:"Poorvaj Hegde"}},
+      {p:3,name:{kn:"ಕಾರ್ತಿಕ್ ಭಟ್",en:"Karthik Bhat"}}
+    ] }
  ]},
  { tab:{kn:"ಸಾಮಾನ್ಯ ವಿಭಾಗ (18+)",en:"General (18+)"}, comps:[
-    { name:{kn:"ಹವ್ಯಕ ಸಂಪ್ರದಾಯ ಗೀತೆ",en:"Havyaka traditional song"}, ranks:[] },
-    { name:{kn:"ರಂಗೋಲಿ",en:"Rangoli"}, ranks:[] },
-    { name:{kn:"ಜಾನಪದ ಗೀತೆ",en:"Folk song"}, ranks:[] },
-    { name:{kn:"ಹವಿಗನ್ನಡ ಆಶುಭಾಷಣ",en:"Extempore speech in Havigannada"}, ranks:[] },
-    { name:{kn:"ಕರಕುಶಲ ವಸ್ತು ಪ್ರದರ್ಶನ",en:"Handicraft exhibition"}, ranks:[] }
+    { name:{kn:"ಹವ್ಯಕ ಸಂಪ್ರದಾಯ ಗೀತೆ",en:"Havyaka traditional song"}, ranks:[
+      {p:1,name:{kn:"ಅನಿತಾ ನಾರಾಯಣ & ತಂಡ",en:"Anita Narayan & team"}},
+      {p:2,name:{kn:"ಅಶ್ವಿನಿ ಪ್ರಕಾಶ್ & ತಂಡ",en:"Ashwini Prakash & team"}},
+      {p:3,name:{kn:"ಶೋಭಾ ಹೆಗಡೆ & ತಂಡ",en:"Shobha Hegde & team"}}
+    ] },
+    { name:{kn:"ರಂಗೋಲಿ",en:"Rangoli"}, ranks:[
+      {p:1,name:{kn:"ಸುರೇಖಾ ಭಟ್",en:"Surekha Bhat"}},
+      {p:2,name:{kn:"ಗೀತಾ ಹೆಗಡೆ",en:"Geeta Hegde"}},
+      {p:3,name:{kn:"ಪವಿತ್ರಾ ಎಸ್.",en:"Pavitra S."}}
+    ] },
+    { name:{kn:"ಜಾನಪದ ಗೀತೆ",en:"Folk song"}, ranks:[
+      {p:1,name:{kn:"ಲೀಲಾ ಹೆಗಡೆ",en:"Leela Hegde"}},
+      {p:2,name:{kn:"ಅಮೃತಾ ಬೆಂಕಟವಳ್ಳಿ",en:"Amrutha Venkatavalli"}},
+      {p:3,name:{kn:"ದೀಪ್ತಿ ಹೆಗಡೆ",en:"Deepti Hegde"}}
+    ] },
+    { name:{kn:"ಹವಿಗನ್ನಡ ಆಶುಭಾಷಣ",en:"Extempore speech in Havigannada"}, ranks:[
+      {p:1,name:{kn:"ಸಹನಾ ಹೆಗಡೆ ಎಮ್.",en:"Sahana Hegde M."}},
+      {p:2,name:{kn:"ಝಾನ್ಸಿ ಲಕ್ಷ್ಮಿ ಭಟ್",en:"Jhansi Lakshmi Bhat"}},
+      {p:3,name:{kn:"ಶ್ರೀಮತಿ ಭಟ್",en:"Srimathi Bhat"}}
+    ] },
+    { name:{kn:"ಹವಿರುಚಿ",en:"Havyaka cuisine"}, ranks:[
+      {p:1,name:{kn:"ಪಾರ್ವತಿ ಎಲ್. ಭಟ್",en:"Parvathi L. Bhat"}},
+      {p:2,name:{kn:"ಶ್ರೀಮತಿ ಭಟ್",en:"Srimathi Bhat"}},
+      {p:3,name:{kn:"ಲಲಿತಾ ಹೆಗಡೆ & ಜಯಲಕ್ಷ್ಮಿ ಭಟ್",en:"Lalita Hegde & Jayalakshmi Bhat"}}
+    ] },
+    { name:{kn:"ಕರಕುಶಲ ವಸ್ತು ಪ್ರದರ್ಶನ",en:"Handicraft exhibition"}, ranks:[
+      {p:1,name:{kn:"ಮೈತ್ರಿ ಭಟ್",en:"Maitri Bhat"}},
+      {p:2,name:{kn:"ನಿವೇದಿತಾ ಭಟ್",en:"Nivedita Bhat"}},
+      {p:3,name:{kn:"ಲಲಿತಾ ಭಟ್",en:"Lalita Bhat"}}
+    ] }
  ]}
 ];
