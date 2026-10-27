@@ -132,6 +132,7 @@ const PEOPLE = [
 
 /* Add more pictures here: put the file in assets/gallery/ and add a line. */
 const GALLERY = [
+ {src:"Thanks Poster.jpeg",alt:{kn:"ಪ್ರತಿಬಿಂಬ ಬೆಂಗಳೂರು ಪ್ರಾಂತ್ಯ",en:"Pratibimba Bengaluru Region"}},
  {src:"poster.png",alt:{kn:"ಪ್ರತಿಬಿಂಬ ಬೆಂಗಳೂರು ಪ್ರಾಂತ್ಯ",en:"Pratibimba Bengaluru Region"}},
  {src:"Pratibha.png",alt:{kn:"ವಿಧಾನ ಸೌಧ ಪೋಸ್ಟರ್",en:"Event poster"}},
  {src:"below six.png",alt:{kn:"6 ವರ್ಷದ ಒಳಗೆ",en:"Under 6"}},
