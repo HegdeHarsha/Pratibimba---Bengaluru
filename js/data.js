@@ -231,7 +231,7 @@ const WINNERS = [
     { name:{kn:"ಕರಕುಶಲ ವಸ್ತು ಪ್ರದರ್ಶನ",en:"Handicraft exhibition"}, ranks:[
       {p:1,name:{kn:"ಮೈತ್ರಿ ಭಟ್",en:"Maitri Bhat"}},
       {p:2,name:{kn:"ನಿವೇದಿತಾ ಭಟ್",en:"Nivedita Bhat"}},
-      {p:3,name:{kn:"ಲಲಿತಾ ಭಟ್",en:"Lalita Bhat"}}
+      {p:3,name:{kn:"ಲಲಿತಾ ಹೆಗಡೆ",en:"Lalita Hegde"}}
     ] }
  ]}
 ];
